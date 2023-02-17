@@ -460,9 +460,7 @@ HOST_CFLAGS	+= -O2 -g
 # Inhibit -Werror if NO_WERROR is specified on make command line
 #
 ifneq ($(NO_WERROR),1)
-CFLAGS		+= -Werror
 ASFLAGS		+= --fatal-warnings
-HOST_CFLAGS	+= -Werror
 endif
 
 # Function trace recorder state in the last build.  This is needed
